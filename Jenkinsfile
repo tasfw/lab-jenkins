@@ -21,7 +21,7 @@ pipeline {
             }
         }     
 
-        stage('Deploy no Kubernetes') {
+        stage('Deploy no Kubernetes Kubectl apply') {
             environment {
                 tag_version = "${env.BUILD_ID}"
             }
